@@ -6,7 +6,7 @@ By default, uploaded files are limited to 200MB. You can configure this using th
 
 ## Demo app
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.template/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.file_uploader/)
 
 ## Code
 Here's how to use `st.write`:
