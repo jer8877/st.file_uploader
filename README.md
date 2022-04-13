@@ -36,6 +36,11 @@ import streamlit as st
 import pandas as pd
 ```
 
+This is followed by creating a header text for the app:
+```python
+st.header('st.file_uploader')
+```
+
 ## Further reading
 1. [`st.file_uploader`](https://docs.streamlit.io/library/api-reference/widgets/st.file_uploader)
 2. [Set configuration options](https://docs.streamlit.io/library/advanced-features/configuration#set-configuration-options)
