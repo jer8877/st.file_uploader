@@ -9,7 +9,7 @@ By default, uploaded files are limited to 200MB. You can configure this using th
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.file_uploader/)
 
 ## Code
-Here's how to use `st.write`:
+Here's how to use `st.file_uploader`:
 ```python
 import streamlit as st
 import pandas as pd
