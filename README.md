@@ -14,7 +14,7 @@ Here's how to use `st.write`:
 import streamlit as st
 import pandas as pd
 
-st.header('st.file_uploader')
+st.title('st.file_uploader')
 
 st.subheader('Input CSV')
 uploaded_file = st.file_uploader("Choose a file")
@@ -36,9 +36,27 @@ import streamlit as st
 import pandas as pd
 ```
 
-This is followed by creating a header text for the app:
+This is followed by creating a title text for the app:
 ```python
-st.header('st.file_uploader')
+st.title('st.file_uploader')
+```
+
+Next, we'll use `st.file_uploader` to display a file uploader widget for accepting user input file:
+```python
+st.subheader('Input CSV')
+uploaded_file = st.file_uploader("Choose a file")
+```
+
+Finally, we define conditional statements for initially displaying a welcome message inviting users to upload their file (as implemented in the `else` condition). Upon file upload, the `if` statements are activated and the CSV file is read by the `pandas` library and displayed via the `st.write` command.
+```python
+if uploaded_file is not None:
+  df = pd.read_csv(uploaded_file)
+  st.subheader('DataFrame')
+  st.write(df)
+  st.subheader('Descriptive Statistics')
+  st.write(df.describe())
+else:
+  st.info('☝️ Upload a CSV file')
 ```
 
 ## Further reading
